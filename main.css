@@ -3,10 +3,18 @@
 	margin: 0%;
 	font-family: Arial, Helvetica, sans-serif;
 }
-
-body {
-	background-image: url("./assets/bacgroundOptioTwo.jpg");
+body{
+	width: 100%;
+	max-width: 1600px;
+	margin:auto;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
 
 #x {
 	color: #57C457;
@@ -22,21 +30,52 @@ body {
 	text-shadow: .1em .1em 0 rgb(85, 28, 219);
 }
 
+.logo-header{
+	font-size: 2.2rem;
+		text-shadow: .1em .1em 0 rgb(8, 8, 8);
+
+}
 #header {
-	background: #1a0331;
+	background: #5A64E8;
 	box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.30);
 	height: 50px;
 	color: white;
 	display: flex;
 	align-items: center;
 	padding: 10px;
+	margin: 0px;
 	z-index: 1;
-	margin-bottom: 10px;
+	justify-content: space-between;
+
+	
 	display: flex;
 	flex-direction: row;
-	text-shadow: .1em .1em 0 rgb(147, 202, 45);
-}
 
+}
+.container-logo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+nav{
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	padding-left: 30px;
+	justify-content: space-around;
+
+}
+nav > li{
+	text-decoration: none;
+	list-style: none;
+	font-size: 18px;
+
+}
+nav >li:hover{
+	color: #ee2cce;
+	transform: scale(1.1);
+	cursor: pointer;
+}
 .higher {
 	color: rgb(41, 116, 212);
 	font-weight: 800;
@@ -45,51 +84,45 @@ body {
 .instructions {
 	display: flex;
 	justify-content: center;
-	height: auto;
+	align-content: center;
+	margin-top: 5%;
 	padding: 10px;
-	width: 30%;
-	text-shadow: .1em .1em 0 rgb(52, 67, 116);
+	color: black;
+	width: 35%;
+	text-shadow: .1em .1em 0 rgba(73, 107, 221, 0.062);
 }
 
-#select-operation {
-	flex-direction:row;
-	align-items: center;
-	align-content: center;
-	display: none;
-	color: white;
-	font-size: 160%;
-	background-color: rgba(0, 0, 0, 0.438);
-}
+
 
 .buttons {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	 justify-content: center; 
 	align-items: center;
-	align-content: center;
+	align-content: center; 
 }
 
 .select-option {
-	flex-direction:row;
-	align-items: center;
-	align-content: center;
-	display: none;
-	color: white;
-	font-size: 160%;
-	background-color: rgba(0, 0, 0, 0.438);
 	position: absolute;
-	top: 20%;
-	left: 10%;
-	margin-left: auto;
-	margin-right: auto;
-	height: 70%;
+	top: 260px;
+	font-size: 160%;
+	/* background-color: rgba(187, 0, 0, 0.219); */
+	z-index: 5;
+	margin: auto;
+	height: 25rem;
 	width: 85%;
 	display: flex;
-	align-self: center;
-	
+	flex-direction:row;
 	justify-content: center;
-	justify-items: center;
+	align-content: center;
+	position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+
 }
 
 .button-option {
@@ -119,19 +152,19 @@ body {
 
 #identificacion,
 #multiplicacion {
-	background-color: #1aa11a;
+	background-color: rgb(248, 38, 255);
 }
 
 #resta {
-	background-color: #0fbebe;
+	background-color: #74CDF5;
 }
 
 #division {
-	background-color: #cf9919;
+	background-color: #F27A5E;
 }
 
 #suma {
-	background-color: #f15877;
+	background-color: #CBDB60;
 }
 #select-suma{
 	display: none;
@@ -149,6 +182,45 @@ body {
 	border: none;
 	outline: none;
 	height: 30px;
-	padding: 5px;
+	width:  15rem;
+	padding: 5px 10px;
 	border-radius: 5px;
+	text-align:right;
+	font-size: 30px;
+}
+#section-suma{
+	display: none;
+	background-color: #999999;
+}
+.display{
+	display: flex;
+	flex-direction: column;
+	text-align:right;
+	justify-content: space-evenly;
+	padding: 5px 10px;
+	height: 5.2rem;
+	width:  95%;
+	margin-bottom: 5px;
+	background-color: white;
+	border-radius: 10px;
+	border: grey 1px solid;
+	color: black;
+}
+.content-display{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 70%;
+}
+footer{
+	padding: 10px;
+	align-items: center;
+	background-color: #000000;
+	position: absolute;
+	bottom: 0;
+	width: 98.2%;
+	color: white;
+	flex-direction: row;
+	display: flex;
+	justify-content: space-around;
 }

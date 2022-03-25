@@ -1,83 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+
 <head>
+
 	<link rel="stylesheet" href="main.css">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
 	<title>CalcuChild</title>
+	<script src="https://kit.fontawesome.com/2965ffca3d.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-	<header id="header" class="header"> 
-		<h2 class="higher" id="x"> X </h2>
-		<div>
-			<h2 class="logo-header"> CalcuChild </h2>
+
+	<header id="header" class="header">
+		<div class="container-logo">
+			<h2 class="higher" id="x"> X </h2>
+			<div>
+				<h2 class="logo-header"> CalcuChild </h2>
+			</div>
+			<h2 class="higher" id="mayor"> > </h2>
 		</div>
-		<h2 class="higher" id="mayor"> > </h2>
-		
+
+
+		<nav>
+			<li> Suma </li>
+			<li> Resta </li>
+			<li> Multiplicación </li>
+			<li> Division </li>
+		</nav>
 	</header>
+
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+		<path fill="#5A64E8" fill-opacity="1"
+			d="M0,256L30,250.7C60,245,120,235,180,192C240,149,300,75,360,69.3C420,64,480,128,540,154.7C600,181,660,171,720,144C780,117,840,75,900,90.7C960,107,1020,181,1080,218.7C1140,256,1200,256,1260,240C1320,224,1380,192,1410,176L1440,160L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+
+		</path>
+
+	</svg>
 
 	<section id="select-option" class="select-option">
 		<h3 id="" class="instructions"> Escoge una de las siguientes opciones para iniciar ✨</h3>
-<div class="buttons">
-	<button class="button-option" id="operacion"> Operación matematica.</button>
-		<span></span>
-		<br>
-		<button class="button-option" id="identificacion"> Identificación de numeros mayores o menores</button>
-</div>
-	
-
+		<div class="buttons">
+			<i class="fa-solid fa-hexagon-xmark"></i>
+			<button class="button-option" id="operacion"><i class="fa-solid fa-hexagon-xmark"></i>Operación
+				matematica.</button>
+			<span></span>
+			<br>
+			<button class="button-option" id="identificacion"> Identificación de numeros mayores o menores</button>
+		</div>
 	</section>
 
 	<section id="select-operation" class="select-option">
 		<h3 class="instructions"> Seleccione la operacion matemática que desea realizar. </h3>
 		<div class="buttons">
-			<button  class="button-option" id="suma"> Suma</button>
-			<button  class="button-option" id="resta"> Resta</button>
-			<button  class="button-option" id="multiplicacion"> Multiplicación</button>
-			<button  class="button-option" id="division"> División</button>
-			<button  class="button-option"id="back" > Atrás </button>
+			<button class="button-option" id="suma"> Suma</button>
+			<button class="button-option" id="resta"> Resta</button>
+			<button class="button-option" id="multiplicacion"> Multiplicación</button>
+			<button class="button-option" id="division"> División</button>
+			<button class="button-option" id="back"> Atrás </button>
 		</div>
-		
+
 	</section>
-	<section id="select-suma" class="select-option">
+
+	<section id="section-suma" class="select-option">
+		<h3 class="instructions">Escribe los numeros que vas a sumar, uno por uno. </h3>
+
+		<div class="buttons">
+			<div class="content-display">
+				<div class="display">
+					<span id="display-suma"></span>
+					<span id="display-result"></span>
+				</div>
+				<input type="number" class="input" id="input-suma" placeholder="0" pattern="[0-9]+">
+			</div>
+
+			<button class="button-option" id="submit-suma"> Sumar</button>
+			<button class="button-option" id="clear"> Limpiar</button>
+
+		</div>
+	</section>
+
+
+	<!-- <section id="section-resta" class="select-option">
 		<h3 class="instructions"> Suma. </h3>
 		<div class="buttons">
 			<input type="number">
-			<button  class="button-option" id="suma"> Suma</button>
-			
+			<button class="button-option" id="suma"> Suma</button>
+
 		</div>
-		
 	</section>
-	<section id="select-resta" class="select-option">
-		<h3 class="instructions"> Suma. </h3>
+	<section id="section-division" class="select-option">
+		<h3 class="instructions"> Division </h3>
 		<div class="buttons">
 			<input type="number">
-			<button  class="button-option" id="suma"> Suma</button>
-			
-		</div>	
-	</section>
-	<section id="select-division" class="select-option">
-		<h3 class="instructions"> Suma. </h3>
-		<div class="buttons">
-			<input type="number">
-			<button  class="button-option" id="suma"> Suma</button>
-			
+			<button class="button-option" id="suma"> Suma</button>
+
 		</div>
-		
 	</section>
-	<section id="select-multiplicacion" class="select-option">
+
+	<section id="section-multiplicacion" class="select-option">
 		<h3 class="instructions"> Multiplicación. </h3>
 		<div class="buttons">
 			<input type="number" class="input">
-			<button  class="button-option" id="suma"> Multiplicar</button>
-			<button  class="button-option" id="resta"> Limpiar</button>
-			
+			<button class="button-option" id="suma"> Multiplicar</button>
+			<button class="button-option" id="resta"> Limpiar</button>
+
 		</div>
-		
-	</section>
-		
-	</section>
-</body><script type="text/javascript" src="main.js"></script>
+	</section> -->
+
+	<!-- <section id="section-suma" class="select-option">
+		<h3 class="instructions"> Escribe los numeros que vas a sumar </h3>
+		<div class="buttons">
+			<input type="number">
+			<button class="button-option" id="suma"> Suma</button>
+
+		</div>
+
+	</section> -->
+
+	<footer>
+		<p> Todos los derechos reservados </p>
+		<div>
+			<p> Creado por: </p>
+			<li> Luis Espejo</li>
+			<li> Paola Castro</li>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="main.js"></script>
+
 </html>
