@@ -71,36 +71,37 @@
 			<div class="content-display">
 				<div class="display">
 					<span id="display-suma"></span>
-					<span id="display-result"></span>
+					<p class="text-result"> <span class="text-result">Resultado: </span> <span id="display-result"></span></p>
 				</div>
 				<input type="number" class="input" id="input-suma" placeholder="0" pattern="[0-9]+">
 			</div>
 
 			<button class="button-option" id="submit-suma"> Sumar</button>
 			<button class="button-option" id="clear"> Limpiar</button>
-
+			<button class="button-option" id="backSum"> Atrás </button>
 		</div>
 	</section>
 
 
-	<!-- <section id="section-resta" class="select-option">
-		<h3 class="instructions"> Suma. </h3>
+	<section id="section-resta" class="select-option">
+		<h3 class="instructions">Escribe los numeros que vas a resta, uno por uno. </h3>
+
 		<div class="buttons">
-			<input type="number">
-			<button class="button-option" id="suma"> Suma</button>
+			<div class="content-display">
+				<div class="display">
+					<span id="display-resta"></span>
+					<p class="text-result"> <span class="text-result">Resultado: </span> <span id="display-result-subtraction"></span></p>
+				</div>
+				<input type="number" class="input" id="input-resta" placeholder="0" pattern="[0-9]+">
+			</div>
 
+			<button class="button-option" id="submit-resta"> restar</button>
+			<button class="button-option" id="clearResta"> Limpiar</button>
+			<button class="button-option" id="backSum"> Atrás </button>
 		</div>
 	</section>
-	<section id="section-division" class="select-option">
-		<h3 class="instructions"> Division </h3>
-		<div class="buttons">
-			<input type="number">
-			<button class="button-option" id="suma"> Suma</button>
 
-		</div>
-	</section>
-
-	<section id="section-multiplicacion" class="select-option">
+	<!-- <section id="section-multiplicacion" class="select-option">
 		<h3 class="instructions"> Multiplicación. </h3>
 		<div class="buttons">
 			<input type="number" class="input">
@@ -129,6 +130,6 @@
 		</div>
 	</footer>
 </body>
-<script type="text/javascript" src="main.js"></script>
+<script  type="module" src="main.js"></script>
 
 </html>

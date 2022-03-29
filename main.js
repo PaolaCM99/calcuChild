@@ -1,10 +1,18 @@
+import {Atras, mostrarOperacionesMatematicas, mostrarSuma, atrasSuma, mostrarResta, atrasResta} from "./hide.js"
+
 
 document.getElementById("back").addEventListener("click", Atras)
 document.getElementById("operacion").addEventListener("click", mostrarOperacionesMatematicas)
+document.getElementById("suma").addEventListener("click", mostrarSuma)
+document.getElementById("backSum").addEventListener("click", atrasSuma)
+document.getElementById("resta").addEventListener("click", mostrarResta)
+document.getElementById("backSum").addEventListener("click", atrasResta)
 
 let con = 10;
-let suma = 0;
+let acomulador = 0;
 let numberTwo = "";
+let numberOne = "";
+
 
 function Suma() {
 	do {
@@ -12,54 +20,79 @@ function Suma() {
 		let input = document.getElementById("input-suma");
 		btn.addEventListener("click", () => {
 			let numberOne = input.value;
-			suma = suma + parseFloat(numberOne);
-			document.getElementById('display-suma').textContent = numberTwo + "+" + numberOne;
-			document.getElementById('display-result').textContent = suma;
-			document.getElementById("input-suma").value = suma;
-			numberTwo = suma;
+			acomulador = acomulador + parseFloat(numberOne);
+			document.getElementById('display-suma').textContent = numberTwo + "" + numberOne;
+			document.getElementById('display-result').textContent = acomulador;
+			document.getElementById("input-suma").value = acomulador;
+			numberTwo = acomulador;
 		})
 
 	} while (con < 3);
 }
 
 function Resta() {
-	console.log("value of Resta")
+	do {
+		let btn = document.getElementById('submit-resta');
+		let input = document.getElementById("input-resta");
+		btn.addEventListener("click", () => {
+			let numberOne = input.value;
+			acomulador = parseFloat(numberOne)- parseFloat(acomulador);
+			document.getElementById('display-resta').textContent = numberTwo + "-" + numberOne;
+			document.getElementById('display-result-subtraction').textContent = acomulador;
+			document.getElementById("input-resta").value = acomulador;
+			numberTwo = acomulador;
+		})
+
+	} while (con < 3);
 
 };
 function Multiplicacion() {
-	let valueOne = 4;
-	let ValueTwo = 2;
-	let total = valueOne * ValueTwo;
+	do {
+		let btn = document.getElementById('submit-multiplicacion');
+		let input = document.getElementById("input-multiplicacion");
+		btn.addEventListener("click", () => {
+			let numberOne = input.value;
+			acomulador = parseFloat(numberOne)- parseFloat(acomulador);
+			document.getElementById('display-multiplicacion').textContent = numberTwo + "-" + numberOne;
+			document.getElementById('display-result-subtraction').textContent = acomulador;
+			document.getElementById("input-multiplicacion").value = acomulador;
+			numberTwo = acomulador;
+		})
+
+	} while (con < 3);
 };
 function division() {
-	console.log("value of division")
+	do {
+		let btn = document.getElementById('submit-division');
+		let input = document.getElementById("input-division");
+		btn.addEventListener("click", () => {
+			let numberOne = input.value;
+			acomulador = parseFloat(numberOne)- parseFloat(acomulador);
+			document.getElementById('display-division').textContent = numberTwo + "-" + numberOne;
+			document.getElementById('display-result-subtraction').textContent = acomulador;
+			document.getElementById("input-division").value = acomulador;
+			numberTwo = acomulador;
+		})
 
-}
-Suma();
-Multiplicacion();
-
-function Atras() {
-	if (document.getElementById("select-operation").style.display = "flex") {
-		document.getElementById("select-operation").style.display = "none";
-		document.getElementById("select-option").style.display = "flex";
-	} else {
-		document.getElementById("select-operation").style.display = "flex";
-	}
-}
-function mostrarOperacionesMatematicas() {
-	if (document.getElementById("select-operation").style.display = "none") {
-		document.getElementById("select-operation").style.display = "flex";
-		document.getElementById("select-option").style.display = "none";
-	} else {
-		document.getElementById("select-operation").style.display = "none";
-	}
+	} while (con < 3);
 }
 
 function Limpiar() {
-	document.getElementById("input-suma").value = 0;
-	suma = 0;
+	acomulador = 0;
 	numberTwo = 0;
 	numberOne = 0;
-}
+	document.getElementById("input-suma").value = 0;
+	document.getElementById('display-result').textContent= 0;
+	document.getElementById('display-suma').textContent = 0;
 
+	document.getElementById("input-resta").value = 0;
+	document.getElementById('display-result').textContent= 0;
+	document.getElementById('display-resta').textContent = 0;
+	
+}
+Resta()
+Suma();
+Multiplicacion();
+division()
 document.getElementById('clear').addEventListener("click", Limpiar)
+document.getElementById('clearResta').addEventListener("click", Limpiar)
