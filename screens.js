@@ -90,3 +90,21 @@ export function atrasDivision() {
 		document.getElementById("section-division").style.display = "none";
 	}
 }
+export function mostrarIdentificacion() {
+	if (document.getElementById("section-numeros-mayores-menores").style.display = "none") {
+		document.getElementById("select-operation").style.display = "none";
+		document.getElementById("select-option").style.display = "none";
+		document.getElementById("section-numeros-mayores-menores").style.display = "flex";
+	} else {
+		document.getElementById("section-numeros-mayores-menores").style.display = "none";
+	}
+}
+export function atrasIdentificacion() {
+	if (document.getElementById("section-numeros-mayores-menores").style.display = "flex") {
+		document.getElementById("select-operation").style.display = "none";
+		document.getElementById("select-option").style.display = "flex";
+		document.getElementById("section-numeros-mayores-menores").style.display = "none";
+	} else {
+		document.getElementById("section-numeros-mayores-menores").style.display = "none";
+	}
+}

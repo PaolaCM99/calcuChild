@@ -43,8 +43,8 @@
 	<section id="select-option" class="select-option">
 		<h3 id="" class="instructions"> Escoge una de las siguientes opciones para iniciar ✨</h3>
 		<div class="buttons">
-			<i class="fa-solid fa-hexagon-xmark"></i>
-			<button class="button-option" id="operacion"><i class="fa-solid fa-hexagon-xmark"></i>Operación
+		
+			<button class="button-option" id="operacion"> Operación
 				matematica.</button>
 			<span></span>
 			<br>
@@ -144,21 +144,30 @@
 	</section>
 
 	<section id="section-numeros-mayores-menores" class="select-option">
-		<h3 class="instructions"> Escribe los que vas a comparar. </h3>
+		<div>
+			<h3 class="instructions"> Escribe los numeros que vas a comparar. </h3>
+			<p></p>
+			<li> <i class="fa-solid fa-greater-than"></i> mayor que</li>
+			<li> <i class="fa-solid fa-less-than"></i> menor que</li>
+			<li> <i class="fa-solid fa-equals"></i> igual que</li>
+		</div>
 
 		<div class="buttons">
 			<div class="content-display">
 				<div class="display">
-					<span id="display-division"></span>
+					<span id="display-identificacion"></span>
 					<p class="text-result"> <span class="text-result">Resultado: </span> <span
-							id="display-result-subtraction"></span></p>
+							id="display-result-numbers"></span></p>
 				</div>
-				<input type="number" class="input" id="input-division" placeholder="0" pattern="[0-9]+">
+				<div class="section-inputs">
+					<input type="number" class="input-identificacion" id="input-identificacion-uno" placeholder="0" pattern="[0-9]+">
+					<input type="number" class="input-identificacion" id="input-identificacion-dos" placeholder="0" pattern="[0-9]+">
+				</div>
 			</div>
 
-			<button class="button-option" id="submit-division"> ¡A operar!</button>
-			<button class="button-option" id="cleardivision"> Limpiar</button>
-			<button class="button-option" id="backDivision"> Atrás </button>
+			<button class="button-option" id="submit-identificacion"> ¡A operar!</button>
+			<button class="button-option" id="clearIdentificacion"> Limpiar</button>
+			<button class="button-clear" id="backIdentificacion"> <i class="fa-solid fa-angle-left"> </i> Atrás </button>
 
 		</div>
 		</div>

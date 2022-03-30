@@ -3,18 +3,22 @@
 	margin: 0%;
 	font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
 	width: 100%;
 	max-width: 1600px;
-	margin:auto;
-}
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+	margin: auto;
 }
 
-input[type=number] { -moz-appearance:textfield; }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
 
 #x {
 	color: #57C457;
@@ -30,11 +34,12 @@ input[type=number] { -moz-appearance:textfield; }
 	text-shadow: .1em .1em 0 rgb(85, 28, 219);
 }
 
-.logo-header{
+.logo-header {
 	font-size: 2.2rem;
-		text-shadow: .1em .1em 0 rgb(8, 8, 8);
+	text-shadow: .1em .1em 0 rgb(8, 8, 8);
 
 }
+
 #header {
 	background: #5A64E8;
 	box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.30);
@@ -47,17 +52,19 @@ input[type=number] { -moz-appearance:textfield; }
 	z-index: 1;
 	justify-content: space-between;
 
-	
+
 	display: flex;
 	flex-direction: row;
 
 }
-.container-logo{
+
+.container-logo {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
-nav{
+
+nav {
 	width: 50%;
 	display: flex;
 	flex-direction: row;
@@ -65,20 +72,24 @@ nav{
 	justify-content: space-around;
 
 }
-nav > li{
+
+nav>li {
 	text-decoration: none;
 	list-style: none;
 	font-size: 18px;
 
 }
-li{
+
+li {
 	list-style: none;
 }
-nav >li:hover{
+
+nav>li:hover {
 	color: #ee2cce;
 	transform: scale(1.1);
 	cursor: pointer;
 }
+
 .higher {
 	color: rgb(41, 116, 212);
 	font-weight: 800;
@@ -91,19 +102,19 @@ nav >li:hover{
 	margin-top: 5%;
 	padding: 10px;
 	color: black;
-	width: 35%;
+	width: 50%;
 	text-shadow: .1em .1em 0 rgba(73, 107, 221, 0.062);
 }
 
 
 
 .buttons {
-	width: 50%;
+	width: 60%;
 	display: flex;
 	flex-direction: column;
-	 justify-content: center; 
+	justify-content: center;
 	align-items: center;
-	align-content: center; 
+	align-content: center;
 }
 
 .select-option {
@@ -116,18 +127,32 @@ nav >li:hover{
 	height: 25rem;
 	width: 85%;
 	display: flex;
-	flex-direction:row;
+	flex-direction: row;
 	justify-content: center;
 	align-content: center;
 	position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
 
 }
-
+.button-clear{
+	justify-content: space-evenly;
+	display: flex;
+	width: 30%;
+	background: #000000;
+	font-size: 20px;
+	text-align: center;
+	outline: none;
+	border: none;
+	color: #FFFFFF;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+}
 .button-option {
 	justify-content: center;
 	display: flex;
@@ -147,6 +172,7 @@ margin: auto;
 .button-option:hover,
 #suma:hover,
 #division:hover,
+.button-clear:hover,
 #multiplicacion:hover,
 #resta:hover #identificacion:hover {
 	background-color: #9336f0;
@@ -158,7 +184,8 @@ margin: auto;
 	background-color: rgb(248, 38, 255);
 }
 
-#resta, #clearResta {
+#resta,
+#clearResta {
 	background-color: #74CDF5;
 }
 
@@ -166,70 +193,102 @@ margin: auto;
 	background-color: #F27A5E;
 }
 
-#suma{
+#suma {
 	background-color: #CBDB60;
 }
-#select-suma{
+
+#select-suma {
 	display: none;
 }
-#select-resta{
+
+#select-resta {
 	display: none;
 }
-#select-division{
+
+#select-division {
 	display: none;
 }
-#clear{
-background-color: #F27A5E;
+
+#clear {
+	background-color: #F27A5E;
 }
-#select-multiplicacion{
+
+#select-multiplicacion {
 	display: none;
 }
-#select-operation{
+
+#select-operation {
 	display: none;
 }
-.input{
+
+.input {
 	border: none;
 	outline: none;
 	height: 30px;
-	width:  15rem;
+	width: 15rem;
 	padding: 5px 10px;
 	border-radius: 5px;
-	text-align:right;
+	text-align: right;
 	font-size: 30px;
 	border: 7px;
 	border: gray 1px solid;
 }
-#section-suma, #section-resta, #section-multiplicacion, #section-division, #section-numeros-mayores-menores{
+.section-inputs{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+width: 100%;
+}
+.input-identificacion{
+	border: none;
+	outline: none;
+	height: 30px;
+	width: 7rem;
+	padding: 5px 10px;
+	border-radius: 5px;
+	text-align: right;
+	font-size: 30px;
+	border: 7px;
+	border: gray 1px solid;
+}
+#section-suma,
+#section-resta,
+#section-multiplicacion,
+#section-division,
+#section-numeros-mayores-menores {
 	display: none;
 }
 
-.display{
+.display {
 	display: flex;
 	flex-direction: column;
-	text-align:right;
+	text-align: right;
 	justify-content: space-evenly;
 	padding: 5px 10px;
 	height: 5.2rem;
-	width:  95%;
+	width: 95%;
 	margin-bottom: 5px;
 	background-color: white;
 	border-radius: 10px;
 	border: grey 1px solid;
 	color: black;
 }
-.text-result{
+
+.text-result {
 	font-size: 20px;
-	text-align: left;	
+	text-align: left;
 	display: flex;
 	justify-content: space-between;
 }
-.content-display{
+
+.content-display {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
 	width: 70%;
 }
-footer{
+
+footer {
 	padding: 10px;
 	align-items: center;
 	background-color: #000000;

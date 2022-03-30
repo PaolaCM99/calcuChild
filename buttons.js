@@ -1,5 +1,5 @@
 
-import {Atras, mostrarOperacionesMatematicas, mostrarSuma, atrasSuma, mostrarResta, atrasResta, mostrarMultiplicacion, atrasMutiplicacion, mostrarDivision,  atrasDivision} from "./screens.js"
+import {Atras, mostrarOperacionesMatematicas, mostrarSuma, atrasSuma, mostrarResta, atrasResta, mostrarMultiplicacion, atrasMutiplicacion, mostrarDivision,  atrasDivision, mostrarIdentificacion, atrasIdentificacion} from "./screens.js"
 
 export  function buttons(){
 	document.getElementById("back").addEventListener("click", Atras)
@@ -12,4 +12,8 @@ export  function buttons(){
 	document.getElementById("backMultiplication").addEventListener("click", atrasMutiplicacion)
 	document.getElementById("division").addEventListener("click", mostrarDivision)
 	document.getElementById("backDivision").addEventListener("click", atrasDivision)
+
+	//------------------------------------------------------------
+	document.getElementById("identificacion").addEventListener("click", mostrarIdentificacion)
+	document.getElementById("backIdentificacion").addEventListener("click", atrasIdentificacion)
 }
