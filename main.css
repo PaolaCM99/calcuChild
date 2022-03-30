@@ -71,6 +71,9 @@ nav > li{
 	font-size: 18px;
 
 }
+li{
+	list-style: none;
+}
 nav >li:hover{
 	color: #ee2cce;
 	transform: scale(1.1);
@@ -155,7 +158,7 @@ margin: auto;
 	background-color: rgb(248, 38, 255);
 }
 
-#resta {
+#resta, #clearResta {
 	background-color: #74CDF5;
 }
 
@@ -163,7 +166,7 @@ margin: auto;
 	background-color: #F27A5E;
 }
 
-#suma {
+#suma{
 	background-color: #CBDB60;
 }
 #select-suma{
@@ -196,7 +199,7 @@ background-color: #F27A5E;
 	border: 7px;
 	border: gray 1px solid;
 }
-#section-suma, #section-resta{
+#section-suma, #section-resta, #section-multiplicacion, #section-division{
 	display: none;
 }
 

@@ -53,3 +53,40 @@ export function atrasResta() {
 		document.getElementById("section-resta").style.display = "none";
 	}
 }
+export function mostrarMultiplicacion() {
+	if (document.getElementById("section-multiplicacion").style.display = "none") {
+		document.getElementById("select-operation").style.display = "none";
+		document.getElementById("select-option").style.display = "none";
+		document.getElementById("section-multiplicacion").style.display = "flex";
+	} else {
+		document.getElementById("section-multiplicacion").style.display = "none";
+	}
+}
+export function atrasMutiplicacion() {
+	if (document.getElementById("section-multiplicacion").style.display = "flex") {
+		document.getElementById("select-operation").style.display = "flex";
+		document.getElementById("select-option").style.display = "none";
+		document.getElementById("section-multiplicacion").style.display = "none";
+	} else {
+		document.getElementById("section-multiplicacion").style.display = "none";
+	}
+}
+
+export function mostrarDivision() {
+	if (document.getElementById("section-division").style.display = "none") {
+		document.getElementById("select-operation").style.display = "none";
+		document.getElementById("select-option").style.display = "none";
+		document.getElementById("section-division").style.display = "flex";
+	} else {
+		document.getElementById("section-division").style.display = "none";
+	}
+}
+export function atrasDivision() {
+	if (document.getElementById("section-division").style.display = "flex") {
+		document.getElementById("select-operation").style.display = "flex";
+		document.getElementById("select-option").style.display = "none";
+		document.getElementById("section-division").style.display = "none";
+	} else {
+		document.getElementById("section-division").style.display = "none";
+	}
+}

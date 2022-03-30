@@ -1,12 +1,7 @@
-import {Atras, mostrarOperacionesMatematicas, mostrarSuma, atrasSuma, mostrarResta, atrasResta} from "./hide.js"
+import {Atras, mostrarOperacionesMatematicas, mostrarSuma, atrasSuma, mostrarResta, atrasResta, mostrarMultiplicacion, atrasMutiplicacion} from "./screens.js"
+import {buttons} from "./buttons.js"
 
-
-document.getElementById("back").addEventListener("click", Atras)
-document.getElementById("operacion").addEventListener("click", mostrarOperacionesMatematicas)
-document.getElementById("suma").addEventListener("click", mostrarSuma)
-document.getElementById("backSum").addEventListener("click", atrasSuma)
-document.getElementById("resta").addEventListener("click", mostrarResta)
-document.getElementById("backSum").addEventListener("click", atrasResta)
+buttons();
 
 let con = 10;
 let acomulador = 0;
@@ -52,8 +47,8 @@ function Multiplicacion() {
 		let input = document.getElementById("input-multiplicacion");
 		btn.addEventListener("click", () => {
 			let numberOne = input.value;
-			acomulador = parseFloat(numberOne)- parseFloat(acomulador);
-			document.getElementById('display-multiplicacion').textContent = numberTwo + "-" + numberOne;
+			acomulador = parseFloat(numberOne)* parseFloat(acomulador);
+			document.getElementById('display-multiplicacion').textContent = numberTwo + "*" + numberOne;
 			document.getElementById('display-result-subtraction').textContent = acomulador;
 			document.getElementById("input-multiplicacion").value = acomulador;
 			numberTwo = acomulador;
@@ -62,13 +57,14 @@ function Multiplicacion() {
 	} while (con < 3);
 };
 function division() {
+	
 	do {
 		let btn = document.getElementById('submit-division');
 		let input = document.getElementById("input-division");
 		btn.addEventListener("click", () => {
 			let numberOne = input.value;
-			acomulador = parseFloat(numberOne)- parseFloat(acomulador);
-			document.getElementById('display-division').textContent = numberTwo + "-" + numberOne;
+			acomulador = parseFloat(numberOne)/ parseFloat(acomulador);
+			document.getElementById('display-division').textContent = numberTwo + "/" + numberOne;
 			document.getElementById('display-result-subtraction').textContent = acomulador;
 			document.getElementById("input-division").value = acomulador;
 			numberTwo = acomulador;

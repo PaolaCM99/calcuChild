@@ -71,7 +71,8 @@
 			<div class="content-display">
 				<div class="display">
 					<span id="display-suma"></span>
-					<p class="text-result"> <span class="text-result">Resultado: </span> <span id="display-result"></span></p>
+					<p class="text-result"> <span class="text-result">Resultado: </span> <span
+							id="display-result"></span></p>
 				</div>
 				<input type="number" class="input" id="input-suma" placeholder="0" pattern="[0-9]+">
 			</div>
@@ -90,36 +91,79 @@
 			<div class="content-display">
 				<div class="display">
 					<span id="display-resta"></span>
-					<p class="text-result"> <span class="text-result">Resultado: </span> <span id="display-result-subtraction"></span></p>
+					<p class="text-result"> <span class="text-result">Resultado: </span> <span
+							id="display-result-subtraction"></span></p>
 				</div>
 				<input type="number" class="input" id="input-resta" placeholder="0" pattern="[0-9]+">
 			</div>
 
-			<button class="button-option" id="submit-resta"> restar</button>
+			<button class="button-option" id="submit-resta"> Restar</button>
 			<button class="button-option" id="clearResta"> Limpiar</button>
-			<button class="button-option" id="backSum"> Atrás </button>
+			<button class="button-option" id="backSubtraction"> Atrás </button>
 		</div>
 	</section>
 
-	<!-- <section id="section-multiplicacion" class="select-option">
-		<h3 class="instructions"> Multiplicación. </h3>
+	<section id="section-multiplicacion" class="select-option">
+		<h3 class="instructions">Escribe los numeros que vas a resta, uno por uno. </h3>
+
 		<div class="buttons">
-			<input type="number" class="input">
-			<button class="button-option" id="suma"> Multiplicar</button>
-			<button class="button-option" id="resta"> Limpiar</button>
+			<div class="content-display">
+				<div class="display">
+					<span id="display-multiplicacion"></span>
+					<p class="text-result"> <span class="text-result">Resultado: </span> <span
+							id="display-result-subtraction"></span></p>
+				</div>
+				<input type="number" class="input" id="input-multiplicacion" placeholder="0" pattern="[0-9]+">
+			</div>
+
+			<button class="button-option" id="submit-multiplicacion"> multiplicacionr</button>
+			<button class="button-option" id="clearmultiplicacion"> Limpiar</button>
+			<button class="button-option" id="backMultiplication"> Atrás </button>
+		</div>
+	</section>
+
+	<section id="section-division" class="select-option">
+		<h3 class="instructions">Escribe los numeros que vas a resta, uno por uno. </h3>
+
+		<div class="buttons">
+			<div class="content-display">
+				<div class="display">
+					<span id="display-division"></span>
+					<p class="text-result"> <span class="text-result">Resultado: </span> <span
+							id="display-result-subtraction"></span></p>
+				</div>
+				<input type="number" class="input" id="input-division" placeholder="0" pattern="[0-9]+">
+			</div>
+
+			<button class="button-option" id="submit-division"> Dividir</button>
+			<button class="button-option" id="cleardivision"> Limpiar</button>
+			<button class="button-option" id="backDivision"> Atrás </button>
+		</div>
+		</div>
+
+	</section>
+
+	<section id="section-numeros" class="select-option">
+		<h3 class="instructions"> Escribe los que vas a comparar. </h3>
+
+		<div class="buttons">
+			<div class="content-display">
+				<div class="display">
+					<span id="display-division"></span>
+					<p class="text-result"> <span class="text-result">Resultado: </span> <span
+							id="display-result-subtraction"></span></p>
+				</div>
+				<input type="number" class="input" id="input-division" placeholder="0" pattern="[0-9]+">
+			</div>
+
+			<button class="button-option" id="submit-division"> ¡A operar!</button>
+			<button class="button-option" id="cleardivision"> Limpiar</button>
+			<button class="button-option" id="backDivision"> Atrás </button>
 
 		</div>
-	</section> -->
-
-	<!-- <section id="section-suma" class="select-option">
-		<h3 class="instructions"> Escribe los numeros que vas a sumar </h3>
-		<div class="buttons">
-			<input type="number">
-			<button class="button-option" id="suma"> Suma</button>
-
 		</div>
 
-	</section> -->
+	</section>
 
 	<footer>
 		<p> Todos los derechos reservados </p>
@@ -130,6 +174,6 @@
 		</div>
 	</footer>
 </body>
-<script  type="module" src="main.js"></script>
+<script type="module" src="main.js"></script>
 
 </html>
