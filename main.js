@@ -1,4 +1,4 @@
-import {Atras, mostrarOperacionesMatematicas, mostrarSuma, atrasSuma, mostrarResta, atrasResta, mostrarMultiplicacion, atrasMutiplicacion} from "./screens.js"
+
 import {buttons} from "./buttons.js"
 
 buttons();
@@ -8,7 +8,7 @@ let acomulador = 0;
 let numberTwo = "";
 let numberOne = "";
 
-
+//Los valores se resetean y quedan en 0, lo mejor seria dejarlos vacios(null)
 function Suma() {
 	do {
 		let btn = document.getElementById('submit-suma');
@@ -86,6 +86,7 @@ function Limpiar() {
 	document.getElementById('display-resta').textContent = 0;
 	
 }
+
 Resta()
 Suma();
 Multiplicacion();

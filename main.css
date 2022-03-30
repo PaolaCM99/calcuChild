@@ -199,7 +199,7 @@ background-color: #F27A5E;
 	border: 7px;
 	border: gray 1px solid;
 }
-#section-suma, #section-resta, #section-multiplicacion, #section-division{
+#section-suma, #section-resta, #section-multiplicacion, #section-division, #section-numeros-mayores-menores{
 	display: none;
 }
 
